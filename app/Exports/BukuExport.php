@@ -2,7 +2,7 @@
 
 namespace App\Exports;
 
-use App\Models\Buku;
+use App\Models\book;
 use Maatwebsite\Excel\Concerns\FromCollection;
 
 class BukuExport implements FromCollection
@@ -12,6 +12,6 @@ class BukuExport implements FromCollection
     */
     public function collection()
     {
-        return Buku::all();
+        return book::all();
     }
 }
